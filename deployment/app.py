@@ -3,10 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
+import os
 from scipy.stats import f_oneway
 
 # === Load Trained Components ===
-model = joblib.load('linear_model.pkl')
+model_path = os.path.join(os.path.dirname(__file__), 'linear_model.pkl')
+model = joblib.load(model_path)
 scaler = joblib.load('scaler.pkl')
 columns = joblib.load('columns.pkl') 
 df = pd.read_csv('dataset.csv')  
