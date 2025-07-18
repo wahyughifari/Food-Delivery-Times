@@ -22,7 +22,7 @@ page = st.sidebar.selectbox("Go to", ["Prediction", "EDA"])
 # PAGE 1: PREDICTION
 # ===============================
 if page == "Prediction":
-    st.title("🚴 Food Delivery Time Prediction")
+    st.title("Food Delivery Time Prediction")
 
     # Input Form
     distance = st.number_input("Distance (km)", min_value=0.0, format="%.1f")
@@ -63,7 +63,7 @@ if page == "Prediction":
 # PAGE 2: EDA
 # ===============================
 elif page == "EDA":
-    st.title("📊 Exploratory Data Analysis")
+    st.title("Exploratory Data Analysis")
 
     # Overview
     st.markdown("""
