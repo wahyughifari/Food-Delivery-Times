@@ -9,9 +9,10 @@ from scipy.stats import f_oneway
 # === Load Trained Components ===
 model_path = os.path.join(os.path.dirname(__file__), 'linear_model.pkl')
 model = joblib.load(model_path)
-scaler = joblib.load('scaler.pkl')
-columns = joblib.load('columns.pkl') 
-df = pd.read_csv('dataset.csv')  
+base_dir = os.path.dirname(__file__)
+scaler = joblib.load(os.path.join(base_dir, 'scaler.pkl'))
+columns = joblib.load(os.path.join(base_dir, 'columns.pkl'))
+df = pd.read_csv(os.path.join(base_dir, 'dataset.csv'))
 
 # === Sidebar Navigation ===
 st.sidebar.title("Navigation")
