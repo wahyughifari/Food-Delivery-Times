@@ -35,3 +35,4 @@ The dataset contains historical food delivery records with the following columns
   - Root Mean Squared Error (RMSE)
   - R² Score
 - [Deployment](https://food-delivery-times-predict.streamlit.app/)
+- [Tableau](https://public.tableau.com/app/profile/muhammad.wahyu.ghifari/viz/Book1_17526785179200/Dashboard1)
